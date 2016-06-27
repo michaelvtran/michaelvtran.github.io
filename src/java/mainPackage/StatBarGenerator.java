@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Michael
  */
-public class HexColorGenerator extends HttpServlet {
+public class StatBarGenerator extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -40,7 +40,7 @@ public class HexColorGenerator extends HttpServlet {
     
     public static String getHexFromStat(int stat) {
         long result, difference;
-        if (stat < 50) 
+        if (stat <= 50) 
             return "ff0000";
         // just a whole bunch of hard-coded approximations and actual values
         switch (stat) {

@@ -6,12 +6,13 @@
 body {
     font-family: calibri, arial;
     font-size: large;
+    margin-left: 3%;
 }
 
 .stat-input-table {
+    float: left;
     text-align: right;
     margin-top: 3%;
-    margin-left: 3%;
     margin-bottom: 1%;
 }
 
@@ -19,9 +20,9 @@ body {
     padding: 5px;
 }
 
-table.stat-bar-table {
+.stat-bar-table {
     width: 50%;
-    margin-left: 5%;
+    margin-top: 1%;
 }
 
 .stat-bar-table td {
@@ -31,16 +32,61 @@ table.stat-bar-table {
     font-size: larger;
 }
 
+#pokemon-name-td {
+    text-align: center;
+}
+
 td.stat-label {
-    width: 25%;
+    width: 37%;
 }
 
 td.stat-number {
     text-align: left;
-    width: 7%;
+    width: 3%;
 }
 
 td.stat-bar {
-    width: 65%;
+    width: 60%;
 }
 
+.flex-container {
+    display: flex;
+    margin-top: 1%;
+}
+
+.enter-pokemon {
+    width: 350px;
+}
+
+#pokeapi-error {
+    color: #ff0000;
+}
+
+.scroll-list {
+    max-height: 250px;
+    max-width: 1000px;
+    border: 1px solid #ccc;
+    overflow: auto;
+    resize: both;
+    flex-grow: 1;
+    margin-top: 2%;
+}
+
+.list-table td {
+    text-align: left;
+    vertical-align: top;
+}
+
+#recent {
+    width: 250px;
+}
+
+#saved {
+    width: 500px;
+}
+
+.saved-pokemon {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
